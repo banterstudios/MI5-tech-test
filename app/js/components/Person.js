@@ -66,7 +66,6 @@ class Person {
 	*    @param {object} phone - object representing an owner and a phone number
 	*    @param {array} persons - array of person objects
 	*	 @return { }
-	*    [CALLER] called/texted [CALLEE] from [PHONE OWNER]'s phone ([PHONE NUMBER])
 	*/
 	text(phone, ...persons){
 

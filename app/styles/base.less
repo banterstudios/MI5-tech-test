@@ -12,11 +12,7 @@ body,html{
 	height: 100%;
 }
 
-#app{
-	position: relative;
-	width: 100%;
-	min-height: 100%;
-	height: auto;
+body.bg{
 
 	background-color:@secondaryBlue;
 
@@ -29,5 +25,13 @@ body,html{
 		height: 100%;
 		background-color: fade(@black,60%);
 	}
+}
 
+/*
+*    Make sure imgs stay fluid
+*/
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto !important; 
 }

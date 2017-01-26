@@ -1,0 +1,71 @@
+/*
+*    Author - Nick de Rozarieux
+*    Really simple grid system
+*    Mobile first
+*/
+
+@columns  : 12;
+@gutter   : 1em;
+@maxwidth : 1200px; 
+
+/* 
+*    Column generator
+*/
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .column-@{i} {
+    width:  (percentage(@i / @n));
+  }
+  .generate-columns(@n, (@i + 1));
+}
+
+/* 
+*    offset generator
+*/
+.generate-offset(@n, @i: 1) when (@i =< @n) {
+  .offset-left-@{i} {
+    margin-left:  (percentage(@i / @n));
+  }
+  .offset-right-@{i} {
+    margin-right:  (percentage(@i / @n));
+  }
+  .generate-offset(@n, (@i + 1));
+}
+
+/*
+*    Start of grid styling
+*/
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper:after,
+.row:after {
+    .clearfix();
+}
+
+[class*='column-'] {
+    float: left;
+    padding: @gutter;
+    width: 100%;
+    min-height: 1px; 
+}
+
+[class*='offset-'] {
+    margin: 0;
+}
+
+
+
+/* Media queries */
+@media only screen and (min-width: 30em) {
+    
+    .wrapper {
+        max-width: @maxwidth; 
+    }
+    
+    .generate-columns(@columns);
+
+    .generate-offset(@columns);
+
+}
