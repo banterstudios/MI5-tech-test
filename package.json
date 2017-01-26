@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "start" : "webpack-dev-server --config webpack.dev.config.js",
+    "start": "webpack-dev-server --config webpack.dev.config.js",
     "dev": "webpack -d --config webpack.dev.config.js",
-    "production" : "webpack -p --config webpack.dev.prod.js"
+    "production": "webpack -p --config webpack.dev.prod.js"
   },
   "author": "Nick de Rozarieux",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "chai": "^3.5.0",
     "css-loader": "^0.26.1",
     "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.26.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",

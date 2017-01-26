@@ -1,0 +1,11 @@
+<svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #151515;
+      }
+    </style>
+  </defs>
+  <title>Beam-icons</title>
+  <path id="close-2" data-name="close" class="cls-1" d="M50,16.58L47.43,14,32,29.43,16.57,14,14,16.56,29.45,32,14,47.44,16.56,50,32,34.56,47.42,50,50,47.4,34.57,32Z"/>
+</svg>

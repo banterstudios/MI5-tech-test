@@ -1,6 +1,11 @@
 "use strict"
 
 /*
+*    Import styles
+*/
+import styles from './styles/index.less'
+
+/*
 *    Import the MI5 class
 */
 import MI5 from './js/components/MI5'

@@ -33,6 +33,10 @@ module.exports = {
           name: 'assets/[path][name].[ext]',
           context: './app/assets'
         }
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
       }
     ]
   },
