@@ -11,7 +11,6 @@ import { ADD_LOG } from '../utils/EventTypes'
 
 /*
 *    @class
-*    @extends Component
 */
 class MI5 {
 	
@@ -41,6 +40,7 @@ class MI5 {
 	/*
 	*    @function
 	*    @private
+	*    @event {ADD_LOG} - listens for an event
 	*/
 	_bindEvents(){
 

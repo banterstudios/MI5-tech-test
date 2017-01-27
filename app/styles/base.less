@@ -1,37 +1,45 @@
 
+@appPadding       : 0 10px;
+@appPaddingTablet : 0 0 0 140px;
+
 *{
 	.box-sizing(border-box);
-
+	font-family: @fontRoboto;
 }
 
-body,html{
-	position: relative;
-	width: 100%;
-	padding: 0;
+html,body {
 	margin: 0;
-	height: 100%;
+	padding: 0;
 }
 
-body.bg{
+body {
+	
+	font-size: 100%;
+	line-height: 100%;
+	background-color:@baseBlue;
 
-	background-color:@secondaryBlue;
+}
 
-	&:before{
-		content : '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: fade(@black,60%);
+#app{
+	position: relative;
+	padding: @appPadding;
+}
+
+
+@media screen and (min-width: @desktopWidth){
+	body.bg{
+
+		background-image:url(@backgroundPattern);
+		background-repeat: no-repeat;
+
+	}
+	
+	#app{
+		padding: @appPaddingTablet;
 	}
 }
 
-/*
-*    Make sure imgs stay fluid
-*/
-img {
-	width: auto;
-	max-width: 100%;
-	height: auto !important; 
-}
+
+
+
+

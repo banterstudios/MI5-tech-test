@@ -1,0 +1,22 @@
+@headerPaddingTop    : 80px;
+@headerPaddingBottom : 100px; 
+@maxLogoWidth        : 300px;
+@logoHeight          : 80px;
+
+header{
+
+	padding: @headerPaddingTop 0 @headerPaddingBottom 0;
+
+	i.logo{
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		height: @logoHeight;
+		max-width: @maxLogoWidth;
+		background-image:url(@logoBg);
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+

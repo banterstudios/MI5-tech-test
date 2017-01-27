@@ -37,6 +37,7 @@
 .wrapper {
     width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .wrapper:after,
@@ -46,9 +47,9 @@
 
 [class*='column-'] {
     float: left;
-    padding: @gutter;
     width: 100%;
     min-height: 1px; 
+    position: relative;
 }
 
 [class*='offset-'] {
@@ -58,7 +59,7 @@
 
 
 /* Media queries */
-@media only screen and (min-width: 30em) {
+@media only screen and (min-width: @desktopWidth) {
     
     .wrapper {
         max-width: @maxwidth; 

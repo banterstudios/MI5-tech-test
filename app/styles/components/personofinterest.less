@@ -1,0 +1,79 @@
+@profilePicWidth  : 150px;
+@profilePicHeight : 166px; 
+
+.person-of-interest{
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+
+	.left{
+		position: relative;
+		width: @profilePicWidth;
+		height: @profilePicHeight;
+		display: table-cell;
+	}
+
+	.content{
+		position: relative;
+		width: 100%;
+		background-color:@betaBlue;
+		display: table;
+	}
+
+	.right{
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		color: white;
+		word-break: break-word;
+		padding:10px;
+		text-align: left;
+		padding-left:20px;
+	}
+
+	.name{
+		position: relative;
+		width: auto;
+		margin:0 0 20px 0;
+		color:@pink;
+		font-size:@sizeMedium;
+	}
+
+	.number{
+		position: relative;
+		width: auto;
+		margin:0;
+		color:@secondaryBlue;
+		font-family: @fontRobotoBlack;
+		font-weight: 600;
+		font-size:@sizeMedium;
+	}
+
+	.profile-pic{
+		display: inline-block;
+		position: relative;
+		width:100%;
+		height: 100%;
+		background-image:url('../../assets/Alex_lambert.png');
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width: @desktopWidth) {
+	.person-of-interest{
+		padding: 0 10px;
+		
+		.name{
+			font-size:@sizeLarge;
+		}
+		.number{
+			font-size:@sizeXMedium;
+		}
+		.right{
+			padding-left: 40px;
+		}
+	}
+}
+

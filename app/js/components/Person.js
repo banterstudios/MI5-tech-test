@@ -10,7 +10,6 @@ import { ADD_LOG } from '../utils/EventTypes'
 
 /*
 *    @class
-*    @extends Component
 */
 class Person {
 	
@@ -49,7 +48,7 @@ class Person {
 
 		let { owner, number } = phone
 
-		let caller   = this._name
+		let caller = this._name
 
 		Event.notify(ADD_LOG, {
 			callee      : name,
@@ -65,7 +64,7 @@ class Person {
 	*    @function
 	*    @param {object} phone - object representing an owner and a phone number
 	*    @param {array} persons - array of person objects
-	*	 @return { }
+	*	 @event {text} - Emits a text event
 	*/
 	text(phone, ...persons){
 
@@ -85,7 +84,7 @@ class Person {
 	*	@function 
 	*   @param {object} phone - object representing an owner and a phone number
 	*   @param {Person} person - Person object 
-	*   @return { }
+	*   @event {CALL} - Emits a call event
 	*/
 	/*
 		var alex = new Person("Alex");
