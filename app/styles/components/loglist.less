@@ -1,0 +1,25 @@
+.log-list{
+	position: relative;
+	width: 100%;
+
+	.log{
+		margin-top: 20px;
+	}
+
+	p{
+		position: relative;
+		margin:0;
+		font-size:@sizeMedium-small;
+		color:@pink;
+	}
+}
+
+
+@media only screen and (min-width: @desktopWidth) {
+	.log-list .log{
+		margin-top:40px;
+	}
+	.log-list p{
+		font-size: @sizeMedium;
+	}
+}
