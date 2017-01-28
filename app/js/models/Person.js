@@ -18,13 +18,25 @@ class Person {
 	*    @constructor
 	*    @param {object} props - object of passed in data
 	*/
-	constructor(name = ""){
+	constructor(name = "", number = "", image = ""){
 		
 		/*
 		*    @private
 		*    @type {string}
 		*/
 		this._name = name
+
+		/*
+		*    @private
+		*    @type {string}
+		*/
+		this._number = number
+
+		/*
+		*    @private
+		*    @type {string}
+		*/
+		this._image = image		
 
 	}
 
@@ -34,6 +46,22 @@ class Person {
 	*/
 	get name(){
 		return this._name
+	}
+
+	/*
+	*    @function name
+	*    @return {string} name
+	*/
+	get number(){
+		return this._number
+	}
+
+	/*
+	*    @function name
+	*    @return {string} name
+	*/
+	get image(){
+		return this._image
 	}
 
 	/*

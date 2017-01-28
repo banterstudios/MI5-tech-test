@@ -17,7 +17,7 @@ export const homeTemplate = () => {
 					</div>
 				</div>
 				<div class="row">
-					<div class="column-10 offset-left-1 offset-right-1">
+					<div class="column-10 offset-left-1 offset-right-1 poi-list ">
 						<!-- Persons of interest -->
 					</div>
 				</div>

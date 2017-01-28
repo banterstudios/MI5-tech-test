@@ -6,19 +6,32 @@
 import styles from './styles/index.less'
 
 /*
-*    Import the MI5 class
+*    Import Helpers
 */
-import MI5 from './js/models/MI5'
+import { ready, selectById } from './js/utils/Helper'
 
 /*
-*    Import the Player class
+*    Import the App
 */
-import Person from './js/models/Person'
 
-window.person = new Person("Gary")
+import App from './js/App'
 
-window.person2 = new Person("Sam")
+/*
+*    @type { App }
+*/
+let AppInstance = null
 
-window.person3 = new Person("john")
+/*
+*    Wait for the dom to be ready
+*    then initiate the app
+*/
+ready()
+.then( () => {
 
-window.mi5 = new MI5()
+	/*
+	*    Initialise the app
+	*/
+	AppInstance = new App(selectById("app"))
+
+})
+.catch( error => console.log('Error!', error) )

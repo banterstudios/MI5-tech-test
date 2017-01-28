@@ -3,7 +3,7 @@
 /*
 *    Imports
 */
-import { headerTemplate } from '../templates/header'
+import { poiTemplate } from '../templates/personofinterest'
 
 import Base from './base'
 
@@ -18,11 +18,11 @@ import { insertEnd } from '../utils/Helper'
 *    @description - Component for the header
 */
 
-class Header extends Base {
+class PersonOfInterest extends Base {
 	
 	/*
 	*     @constructor
-	*     @param { DOMELEMENT } container - container to append the header to
+	*     @param { DOMELEMENT } container - container to append the PersonOfInterest to
 	*     @param { object } props
 	*/
 	constructor(container, props){
@@ -35,6 +35,7 @@ class Header extends Base {
 		*    Call init
 		*/
 		this._init()
+
 	}
 
 	/*
@@ -53,9 +54,9 @@ class Header extends Base {
 	*    @return { void } 
 	*/
 	_render(){
-		insertEnd(this.container, headerTemplate(this.props))
+		insertEnd(this.container, poiTemplate(this.props))
 	}
 
 }
 
-export default Header
+export default PersonOfInterest

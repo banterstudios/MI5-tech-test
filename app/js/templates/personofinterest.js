@@ -9,17 +9,17 @@
 export const poiTemplate = (props) => { 
 	
 	/*
-	*    @type {string, int }
+	*    @type {string, int, string }
 	*    @private
 	*/
-	let { name, number } = props
+	let { name, number, image } = props
 
 	return (
 		`<div class="column-6">
 			<div class="person-of-interest">
 				<div class="content">
 					<div class="left">
-						<i class="profile-pic"></i>
+						<i class="profile-pic" style="background-image:url('${require('../../assets/' + image)}')"></i>
 					</div>
 					<div class="right">
 						<h2 class="name">
