@@ -11,6 +11,7 @@ import { ADD_LOG } from '../utils/EventTypes'
 
 /*
 *    @class
+*    @description - log details from suspects
 */
 class MI5 {
 	
@@ -40,6 +41,7 @@ class MI5 {
 	/*
 	*    @function
 	*    @private
+	*    @return {void}
 	*    @event {ADD_LOG} - listens for an event
 	*/
 	_bindEvents(){
@@ -53,6 +55,7 @@ class MI5 {
 	/*
 	*    @function
 	*    @private
+	*    @return {void}
 	*/
 	_storeLog(data){
 
@@ -74,7 +77,7 @@ class MI5 {
 	/*
 	*    @function
 	*    @param {object} log
-	*    @return {object}
+	*    @return {string}
 	*/
 	_generateLog(log){
 		

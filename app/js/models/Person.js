@@ -10,6 +10,7 @@ import { ADD_LOG } from '../utils/EventTypes'
 
 /*
 *    @class
+*    @description - dispatch events for when ever a person makes a call / text
 */
 class Person {
 	
@@ -41,6 +42,7 @@ class Person {
 	*    @param {person} person
 	*    @type  {string} type
 	*    @private
+	*    @return {void}
 	*/
 	_emitLogEvent(type, phone, person){
 
@@ -65,6 +67,7 @@ class Person {
 	*    @param {object} phone - object representing an owner and a phone number
 	*    @param {array} persons - array of person objects
 	*	 @event {text} - Emits a text event
+	*    @return {void}
 	*/
 	text(phone, ...persons){
 
@@ -85,10 +88,7 @@ class Person {
 	*   @param {object} phone - object representing an owner and a phone number
 	*   @param {Person} person - Person object 
 	*   @event {CALL} - Emits a call event
-	*/
-	/*
-		var alex = new Person("Alex");
-		var phone = {owner: dan, number: “07874438205"}; dan.call(phone, alex);
+	*    @return {void}
 	*/
 	call(phone, person){
 

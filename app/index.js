@@ -22,5 +22,3 @@ window.person2 = new Person("Sam")
 window.person3 = new Person("john")
 
 window.mi5 = new MI5()
-
-
