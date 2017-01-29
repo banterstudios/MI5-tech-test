@@ -112,7 +112,7 @@ class App {
 	*    @private
 	*    @return {void}
 	*	 var phone = {owner: person2, number: "07874438205"}; 
-	*	person3.text(phone, person2,person,person3);
+	*	 person3.text(phone, person2,person,person3);
 	*/
 	_fakeText(person, phone, ...textees){
 

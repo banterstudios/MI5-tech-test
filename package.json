@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.config.js --port 8888",
     "dev": "webpack -d --config webpack.dev.config.js",
-    "production": "webpack -p --config webpack.dev.prod.js"
+    "production": "webpack -p --config webpack.prod.config.js"
   },
   "author": "Nick de Rozarieux",
   "license": "ISC",
