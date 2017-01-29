@@ -2,6 +2,8 @@
 
 As part of an interview process I was asked to create a simple application based of a spec which had to be mobile friendly and follow a set of requirements.
 
+I was asked not to use any libraries / frameworks to do this test but was allowed to use libraries / tools for building and testing purposes
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
