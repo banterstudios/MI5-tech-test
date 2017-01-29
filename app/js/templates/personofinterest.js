@@ -12,11 +12,11 @@ export const poiTemplate = (props) => {
 	*    @type {string, int, string }
 	*    @private
 	*/
-	let { name, number, image } = props
+	let { name, number, image, key } = props
 
 	return (
-		`<div class="column-6">
-			<div class="person-of-interest">
+		`<div class="column-6 person-of-interest" key="${ key }">
+			
 				<div class="content">
 					<div class="left">
 						<i class="profile-pic" style="background-image:url('${require('../../assets/' + image)}')"></i>
@@ -30,7 +30,7 @@ export const poiTemplate = (props) => {
 						</h3>
 					</div>
 				</div>
-			</div>
+			
 		</div>`
 	)
 }

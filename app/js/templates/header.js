@@ -1,7 +1,7 @@
 "use strict"
 
 /*
-*    @name header
+*    @name headerTemplate
 *    @function
 *    @return {string} - string representing the header
 */

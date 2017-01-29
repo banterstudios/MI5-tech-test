@@ -39,6 +39,7 @@ class Header extends Base {
 
 	/*
 	*     @function
+	*     @private
 	*     @return { void }
 	*/
 	_init(){

@@ -97,7 +97,7 @@ class Person {
 	*	 @event {text} - Emits a text event
 	*    @return {void}
 	*/
-	text(phone, ...persons){
+	text(phone, persons){
 
 		/*
 		*    Loop around each person

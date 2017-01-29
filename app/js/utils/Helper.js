@@ -59,3 +59,12 @@ export const selectFirst = (selector, root = document) => {
 export const selectById = id => {
     return document.getElementById(id)
 }
+
+/*
+*    @function
+*    @param { DOMElement } host
+*    @param { DOMElement } element
+*/
+export const removeChild = (host, element) => {
+    host.removeChild(element);
+}

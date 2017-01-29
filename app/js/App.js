@@ -120,7 +120,7 @@ class App {
 	*/
 	_fakeText(person, phone, ...textees){
 
-		person.text(phone, textees)
+		person.text(phone, [...textees])
 
 	}
 
