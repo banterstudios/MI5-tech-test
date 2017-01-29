@@ -135,6 +135,14 @@ class Home extends Base {
 			return
 
 		/*
+		*    If the modal already exists
+		*    Remove it
+		*/
+		if(this._modal){
+			this._destroyModal()
+		}
+
+		/*
 		*    @private
 		*    @type { person }
 		*/
@@ -174,7 +182,7 @@ class Home extends Base {
 	_destroyModal(){
 
 		this._modal.destroy()
-		
+
 		this._modal = null
 	}
 
