@@ -16,7 +16,7 @@ export const poiTemplate = (props) => {
 
 	return (
 		`<div class="column-6 person-of-interest" key="${ key }">
-			
+			<div class="wrapper">
 				<div class="content">
 					<div class="left">
 						<i class="profile-pic" style="background-image:url('${require('../../assets/' + image)}')"></i>
@@ -30,7 +30,7 @@ export const poiTemplate = (props) => {
 						</h3>
 					</div>
 				</div>
-			
+			</div>
 		</div>`
 	)
 }

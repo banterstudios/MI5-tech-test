@@ -91,10 +91,6 @@ class App {
 			number : "09898998989" 
 		}, this.johnModel, this.amyModel)
 
-		this._fakeText(this.nickModel, {
-			owner  : this.johnModel,
-			number : "09898998989" 
-		}, this.alexModel, this.amyModel)
 
 	}
 
